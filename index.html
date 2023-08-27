@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <!-- daisyUI 3.6.2 CSS file + Tailwind CSS CDN script: -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="">
+        <div class="flex flex-col lg:flex-row md:flex-row justify-center items-center my-10">
+            <input type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+            <button class="btn btn-neutral">Search</button>
+        </div>
+    </section>
+    <section>
+        <div class="flex justify-center items-center my-10">
+            <!-- phn container  -->
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- here code comes from api -->
+            </div>
+        </div>
+    </section>
+    <!-- script -->
+    <script src="js/phone.js"></script>
+</body>
+</html>
