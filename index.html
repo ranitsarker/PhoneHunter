@@ -19,16 +19,38 @@
         <div class="flex justify-center items-center my-10">
             <!-- phn container  -->
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- here code comes from api -->
+                <!-- api content load -->
             </div>
         </div>
     </section>
     <!-- show all -->
     <section>
-        <div class="flex justify-center items-center my-10 hidden" id="show-all-product">
-            <button class="btn btn-neutral">Show All</button>
+        <!-- loader or spinner  -->
+        <div id="loading-spinner" class="text-center hidden">
+            <span class="loading loading-spinner text-neutral">
+                <!-- api content load -->
+            </span>
+        </div>
+        <div class="text-center my-10 hidden" id="show-all-product">
+            <button onclick="handleShowAll()" class="btn btn-neutral">Show All</button>
         </div>
     </section>
+    <!-- show details modal -->
+        <dialog id="showDetailsModal" class="modal modal-bottom sm:modal-middle">
+        <form method="dialog" class="modal-box">
+            <h3 id="phone-detail-name" class="font-bold text-lg">
+                <!-- api content load -->
+            </h3>
+            <div id="show-detail-container">
+                <!-- api content load -->
+            </div>
+            <!-- if there is a button in form, it will close the modal -->
+            <div class="flex justify-center items-center my-5">
+                <button class="btn btn-neutral">Close</button>
+            </div>
+        </form>
+        </dialog>
+    <!-- show details modal end -->   
     <!-- script -->
     <script src="js/phone.js"></script>
 </body>
