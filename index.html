@@ -9,10 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section class="">
+    <section>
         <div class="flex flex-col lg:flex-row md:flex-row justify-center items-center my-10">
-            <input type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
-            <button class="btn btn-neutral">Search</button>
+            <input id="search-field" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+            <button onclick="searchHandler();" class="btn btn-neutral">Search</button>
         </div>
     </section>
     <section>
@@ -21,6 +21,12 @@
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!-- here code comes from api -->
             </div>
+        </div>
+    </section>
+    <!-- show all -->
+    <section>
+        <div class="flex justify-center items-center my-10 hidden" id="show-all-product">
+            <button class="btn btn-neutral">Show All</button>
         </div>
     </section>
     <!-- script -->
